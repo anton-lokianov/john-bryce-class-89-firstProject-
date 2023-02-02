@@ -1,0 +1,151 @@
+body{
+    text-align: center;
+    background-image: url("../imgs/tile.jpg");
+    padding: 50px 0 0 0;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+/* tasks from */
+.textBox{
+    text-align: left;
+    padding: 20px 77px;
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto 35px;
+}
+
+/* tasks image form */
+.inputs-container{
+    background-image: url("../imgs/formbg.jpg");
+    background-repeat: repeat-y;
+    padding: 16px 2px 20px 79px;
+    box-shadow: 5px 10px 40px 1px;
+}
+
+/* inputs form */
+.inputs-container input{
+    border: 0;
+    outline: none;
+    margin: 5px 0 0 0;
+    background:transparent;
+}
+
+/* note */
+.task-res{
+    display: block;
+    position: relative;
+    background-image: url("../imgs/notebg.png");
+    width: 180px;
+    height: 250px;
+    margin: 0 0 0 33px;
+    background-size: cover;
+    animation: fadeIn 1s;
+}
+
+.task-res .closeTask {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.task-res:hover .closeTask {
+    visibility: visible;
+    pointer-events: all;
+}
+
+/* note fade in */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* task input */
+#task{
+    width: 98%;
+}
+
+/* note list container */
+.tasks-list-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* note close button */
+.closeTask{
+    position: relative;
+    margin: 19px 0 0 152px;
+    width: 20px;
+    height: 15px;
+    border: none;
+    background: transparent;
+}
+
+/* note text area */
+.task-text{
+    width: 170px;
+    height: 150px;
+    text-align: left;
+    margin: 0 0 0 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    word-break: break-word;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+/* note date area */
+.date-text{
+    text-align: left;
+    position: absolute;
+    margin: 13px 0 0 7px;
+    font-family: 'Lucida Sans', 
+    'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* note time area */
+.time-text{
+    text-align: left;
+    position: absolute ;
+    margin: 30px 0 0 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+
+/* add and reset buttons */
+.btn{
+    cursor: pointer;
+}
+
+.buttons-container{
+    margin: 6px 0 0 0;
+    text-align: right;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #686464 #d6d6d6;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d6d6d6;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #686464;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
